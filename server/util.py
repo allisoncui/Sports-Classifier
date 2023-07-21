@@ -94,5 +94,3 @@ if __name__ == '__main__':
     # print(classify_image(None, './test_images/virat1.jpg'))
     # print(classify_image(None, './test_images/virat2.jpg'))
     # print(classify_image(None, './test_images/virat3.jpg'))
-    
-    

@@ -14,5 +14,5 @@ def classify_image():
 
 if __name__ == "__main__":
     print("Starting Python Flask server for Sports Celebrity Image Classification")
-    util.load_saved_artifacts()             # artifacts will load saved model to memory
+    util.load_saved_artifacts()    # artifacts will load saved model to memory
     app.run(port=3000)
