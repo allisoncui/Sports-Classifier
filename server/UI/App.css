@@ -1,11 +1,12 @@
 .card-wrapper {
-    margin: 5% 0;
-  }
-  
+  margin: 5% 0;
+}
+
 /* You can adjust the image size by increasing/decreasing the width, height */
 .custom-circle-image {
-  width: 10vw; /* note i used vw not px for better responsive */
+  width: 10vw;
   height: 10vw;
+  background-color: #f9faf5;
 }
 
 .custom-circle-image img {
@@ -13,7 +14,7 @@
 }
 
 .card-title {
-  letter-spacing: 1.1px;
+  font-family: 'Alacrity Sans Light';
 }
 
 .card-text {
@@ -28,11 +29,45 @@
 
 
 .error {
-  font-family: MerriweatherRegular;
+  font-family: 'Alacity Sans Light';
   font-size: 30px;
   line-height: initial;
   color: blue;
   text-align: center;
+}
+
+.title {
+  font-family: 'Alacrity Sans Regular';
+  font-size: 40px;
+  padding: 2rem;
+}
+
+.navbar {
+  background-color:#365d56;
+}
+
+.body {
+  background-color: #fbfbf3;
+}
+
+.subheader {
+  font-family: 'Alacrity Sans Regular';
+  font-size: 30px;
+  padding-top: 3rem;
+  margin-left: 60px;
+  padding-bottom: 1rem;
+}
+
+.celeb-cards {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.btn {
+  background-color: #63caa4;
+  font-family: 'Alacrity Sans Light';
+  color: black;
 }
 
 #classTable {
@@ -41,7 +76,8 @@
   width: 100%;
 }
 
-#classTable td, #classTable th {
+#classTable td,
+#classTable th {
   border: 1px solid #ddd;
   padding: 8px;
 }
