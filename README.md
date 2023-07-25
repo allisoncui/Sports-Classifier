@@ -7,4 +7,4 @@ Sports Celebrity Classifier is an end-to-end application for facial recognition.
 - UI : UI website code
 - server: Python flask server
 - model: Jupyter notebook to build model
-- images_dataset: Dataset used for our model training
+- dataset: Dataset used for our model training
