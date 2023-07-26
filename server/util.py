@@ -27,7 +27,7 @@ def classify_image(image_base64_data, file_path=None):
         result.append({
             'class': class_number_to_name(__model.predict(final_img)[0]),
             'class_probability': list(np.round(__model.predict_proba(final_img)*100,2))[0],
-            # 'class_dictionary': __class_name_to_number
+            'class_dictionary': __class_name_to_number
         })                                          
     
     return result
@@ -40,13 +40,13 @@ def load_saved_artifacts():
     global __class_name_to_number
     global __class_number_to_name
     
-    with open('./artifacts/class_dictionary.json', 'r') as file:
+    with open('./server/artifacts/class_dictionary.json', 'r') as file:
         __class_name_to_number = json.load(file)
         __class_number_to_name = {v:k for k,v in __class_name_to_number.items()}
     
     global __model
     if __model is None:
-        with open('./artifacts/saved_model.pkl', 'rb') as file:
+        with open('./server/artifacts/saved_model.pkl', 'rb') as file:
             __model = joblib.load(file)
     print("Loading saved artifacts done")
         
