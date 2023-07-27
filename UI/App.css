@@ -72,15 +72,17 @@
 }
 
 #classTable {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: 'Alacrity Sans Light';
   border-collapse: collapse;
   width: 100%;
 }
 
 #classTable td,
 #classTable th {
-  border: 1px solid #ddd;
+  border: 1px solid #7c7474;
   padding: 8px;
+  font-family: 'Alacrity Sans Light';
+  background-color: #e0f4ec;
 }
 
 #classTable th {
@@ -89,4 +91,5 @@
   text-align: left;
   background-color: #63caa4;
   color: white;
+  font-family: 'Alacrity Sans Regular';
 }
